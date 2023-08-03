@@ -1,0 +1,77 @@
+@import url(_base.css);
+
+body {
+  margin: 0;
+  background-color: #bbc4c7;
+}
+
+.contenedor {
+  background-color: white;
+  min-height: 80px;
+  padding: 30px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  font-size: 20px;
+  text-align: center;
+  padding: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+}
+
+header {
+  display: flex;
+  min-height: 80px;
+  background-color: #005673;
+  align-items: center;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  margin-left: 50px;
+}
+
+nav a {
+  font-weight: 600;
+  padding-right: 20px;
+}
+
+nav a:hover {
+  color: white;
+}
+
+footer{
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+  }
+  nav {
+    padding: 10px 0px;
+  }
+}
+
+
+
+h1{
+    text-align: center;
+}
+

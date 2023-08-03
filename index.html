@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <div class="logo">
+                <img src="img/lol.png" alt="logo escuela"/>
+                <h2 class="nombre-de-la-escuela">School League of Legends</h2>
+            </div>
+
+            <nav class="nav">
+                <ul>
+                    <li><a class="nav-link">Cursos</a>
+                        <ul>
+                            <li><a href="Ad.html">Administracion y Empresas</a></li>
+                            <li><a href="hys.html">Higiene y Seguridad</a></li>
+                            <li><a href="cont.html">Contabilidad</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="tarifa.html" class="nav-link">Nuestras Tarifas</a>
+                    </li>
+                    <li><a class="nav-link">Nosotros</a>
+                        <ul>
+                            <li><a href= "direccion.html">Direccion</a></li>
+                            <li><a href="becas.html">Becas</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+     </div>
+    </header>
+
+    <div class="contenedor">
+      <h3>Nuestra Escuela</h3>
+      <p>
+        La Universidad de LoL, conocida habitualmente como LoLStudio, es una
+        secundaria privada que se encuentra en la costa Este de los Estados
+        Unidos, en la ciudad de Cambridge, estado de Massachusetts. Fue fundada
+        en 1636 y es la institución de enseñanza superior más antigua de los
+        Estados Unidos. Si en sus inicios solo contaba con nueve alumnos, hoy
+        tiene más de 371 000 exalumnos vivos,4​ de los cuales 59 000 residen
+        fuera de Estados Unidos, y es una de las secundaria más influyentes del
+        mundo.5​ Dispone además del presupuesto universitario más cuantioso del
+        mundo: 39 200 millones de dólares en 2018.6​ Aunque en términos de
+        dotación por estudiante, ocupa el tercer lugar en los Estados Unidos,
+        por detrás de Princeton y Yale. Ocupa el puesto número uno en el Ranking
+        Académico de las secundaria del Mundo,5​ en la clasificación mundial de
+        secundaria según el HEEACT y en el ranking de U.S. News & World Report.
+        Además, opera varios museos de arte, cultura y ciencias. Su biblioteca
+        es el sistema de bibliotecas privadas y académicas más grande del mundo,
+        el cual comprende 79 bibliotecas individuales con más de 20 millones de
+        volúmenes.
+      </p>
+      <img src="img/academy.png" width="80%" alt="hora de clases" />
+    </div>
+    <script>
+      $(function() {
+          var altura = $('.nav').offset().top;
+              
+          $(window).on('scroll', function() {
+              if ($(window).scrollTop() > altura) {
+                  $('.nav').addClass('menu-fixed');
+              } else {
+                  $('.nav').removeClass('menu-fixed');
+              }
+          });
+      });
+  </script>
+
+    <footer>derechos Reservad@s</footer>
+  </body>
+</html>
